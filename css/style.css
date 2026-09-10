@@ -368,6 +368,7 @@ svg { display: block; }
 .form-success .icon svg { width: 28px; height: 28px; }
 
 /* ---------- Order summary / cart ---------- */
+#checkoutSection { scroll-margin-top: var(--header-h); }
 .order-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: start; }
 .order-summary { background: var(--espresso-900); color: var(--cream-100); border-radius: var(--radius-md); padding: 30px; position: sticky; top: calc(var(--header-h) + 20px); }
 .order-summary h3 { color: var(--cream-100); margin-bottom: 18px; }

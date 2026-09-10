@@ -393,7 +393,8 @@ function initOrderPage() {
       <div class="summary-line"><span>Delivery</span><span>${delivery === 0 ? 'Free' : 'Rs ' + delivery}</span></div>
       <div class="summary-line"><span>Tax (5%)</span><span>Rs ${tax}</span></div>
       <div class="summary-line total"><span>Total</span><span>Rs ${total}</span></div>
-      <button type="button" class="btn btn-outline btn-block" id="clearCartBtn" style="margin-top:14px;border-color:#e3bd82;color:#faf3e8;">Clear Cart</button>
+      <a href="#checkoutSection" class="btn btn-primary btn-block" id="goToCheckoutBtn" style="margin-top:18px;">Proceed To Checkout</a>
+      <button type="button" class="btn btn-outline btn-block" id="clearCartBtn" style="margin-top:10px;border-color:#e3bd82;color:#faf3e8;">Clear Cart</button>
     `;
     if (checkoutBtn) checkoutBtn.disabled = false;
   }
@@ -415,6 +416,9 @@ function initOrderPage() {
   });
 
   summary.addEventListener('click', (e) => {
+    if (e.target.id === 'goToCheckoutBtn') {
+      setTimeout(() => document.getElementById('coName')?.focus(), 500);
+    }
     if (e.target.id === 'clearCartBtn') {
       setCart({});
       updateCartBadge();
