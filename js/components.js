@@ -24,7 +24,6 @@ const NAV_LINKS = [
 
 const NAV_MORE = [
   { href: 'services.html', label: 'Services & Catering', key: 'services' },
-  { href: 'team.html', label: 'Our Team', key: 'team' },
   { href: 'events.html', label: 'Events', key: 'events' },
   { href: 'blog.html', label: 'Blog', key: 'blog' },
   { href: 'loyalty.html', label: 'Loyalty Rewards', key: 'loyalty' },
@@ -110,7 +109,6 @@ function buildFooter() {
           <li><a href="about.html">About Us</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="team.html">Our Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
         </ul>
