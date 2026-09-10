@@ -121,8 +121,7 @@ svg { display: block; }
   position: sticky; top: 0; z-index: 500;
   height: var(--header-h);
   display: flex; align-items: center;
-  background: rgba(251, 248, 243, 0.94);
-  backdrop-filter: blur(10px);
+  background: rgba(251, 248, 243, 0.98);
   border-bottom: 1px solid var(--line);
   transition: box-shadow var(--transition), background var(--transition);
 }
