@@ -23,10 +23,7 @@ const NAV_LINKS = [
 
 const NAV_MORE = [
   { href: 'services.html', label: 'Services & Catering', key: 'services' },
-  { href: 'events.html', label: 'Events', key: 'events' },
-  { href: 'blog.html', label: 'Blog', key: 'blog' },
   { href: 'loyalty.html', label: 'Loyalty Rewards', key: 'loyalty' },
-  { href: 'franchise.html', label: 'Franchise', key: 'franchise' },
   { href: 'testimonials.html', label: 'Testimonials', key: 'testimonials' },
   { href: 'faq.html', label: 'FAQ', key: 'faq' },
 ];
@@ -107,7 +104,6 @@ function buildFooter() {
         <ul>
           <li><a href="about.html">About Us</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="blog.html">Blog</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
         </ul>
       </div>
@@ -118,7 +114,6 @@ function buildFooter() {
           <li><a href="reservation.html">Reservations</a></li>
           <li><a href="services.html">Catering & Events</a></li>
           <li><a href="loyalty.html">Loyalty Rewards</a></li>
-          <li><a href="franchise.html">Franchise</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
       </div>
@@ -148,7 +143,6 @@ function buildFooter() {
       <div class="footer-bottom-links">
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Support</a>
-        <a href="franchise.html">Franchise</a>
       </div>
     </div>
   </div>`;
