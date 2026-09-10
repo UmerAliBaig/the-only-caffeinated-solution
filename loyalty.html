@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loyalty Rewards | The Only Caffeinated Solution</title>
+<meta name="description" content="Join the TOCS loyalty programme — earn points on every purchase and unlock free drinks, birthday treats and early menu access.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%232b1810'/%3E%3Cpath d='M16 28h26v10a13 13 0 0 1-13 13 13 13 0 0 1-13-13V28z' fill='%23f0e2cc'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="loyalty">
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="header-placeholder"></div>
+
+<main id="main">
+
+  <section class="page-hero" style="background-image:url('https://picsum.photos/seed/loyaltyhero/1600/700');">
+    <div class="container">
+      <span class="eyebrow">Loyalty Rewards</span>
+      <h1>Earn Beans While You Sip</h1>
+      <p>Every rupee spent earns points toward free drinks, birthday treats and early menu access.</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Loyalty Rewards</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Membership Tiers</span>
+        <h2>The More You Sip, The More You Save</h2>
+      </div>
+      <div class="data-table-wrap reveal">
+        <table class="data-table">
+          <thead><tr><th>Tier</th><th>Annual Spend</th><th>Points Multiplier</th><th>Perks</th></tr></thead>
+          <tbody>
+            <tr><td>Bronze Bean</td><td>Rs 0 &ndash; 2,999</td><td>1x</td><td>10 pts / Rs 100 spent</td></tr>
+            <tr><td>Silver Blend</td><td>Rs 3,000 &ndash; 7,999</td><td>1.25x</td><td>Free birthday drink</td></tr>
+            <tr><td>Gold Espresso</td><td>Rs 8,000 &ndash; 14,999</td><td>1.5x</td><td>Free birthday drink + early menu access</td></tr>
+            <tr><td>Platinum Roast</td><td>Rs 15,000+</td><td>2x</td><td>All Gold perks + free monthly bag of beans</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <div class="form-card reveal" style="max-width:600px;margin:0 auto;text-align:center;">
+        <span class="eyebrow">Points Calculator</span>
+        <h2 style="margin-bottom:20px;">See What You'd Earn</h2>
+        <div class="form-group" style="text-align:left;">
+          <label for="loyaltySpend">Estimated Monthly Spend (Rs)</label>
+          <input type="number" id="loyaltySpend" min="0" step="100" value="4000">
+        </div>
+        <div class="grid grid-2" style="margin-top:20px;">
+          <div class="feature-card">
+            <p style="font-size:0.85rem;color:var(--ink-soft);">Points Earned / Month</p>
+            <p id="loyaltyPoints" style="font-family:var(--font-heading);font-size:2rem;color:var(--caramel-500);font-weight:700;">400</p>
+          </div>
+          <div class="feature-card">
+            <p style="font-size:0.85rem;color:var(--ink-soft);">Your Tier</p>
+            <p id="loyaltyTier" style="font-family:var(--font-heading);font-size:1.6rem;color:var(--espresso-900);font-weight:700;margin-top:10px;">Silver Blend</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Redeem</span>
+        <h2>What Points Can Get You</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="feature-card text-center reveal"><div class="feature-icon" style="margin:0 auto 14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.6a2.4 2.4 0 0 1 0 4.8H17"/></svg></div><h3>500 pts</h3><p>Any regular hot coffee, free</p></div>
+        <div class="feature-card text-center reveal"><div class="feature-icon" style="margin:0 auto 14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c1-6 6-10 12-10 4 0 6 2 6 2s-2 6-8 8c-4 1.3-8 1-10 0z"/></svg></div><h3>350 pts</h3><p>Any bakery item, free</p></div>
+        <div class="feature-card text-center reveal"><div class="feature-icon" style="margin:0 auto 14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M4.5 12l1-3a3 3 0 0 1 3-2h7a3 3 0 0 1 3 2l1 3M4.5 12l1 2.8A2 2 0 0 0 7.4 16h9.2a2 2 0 0 0 1.9-1.2l1-2.8"/></svg></div><h3>800 pts</h3><p>Any sandwich or wrap, free</p></div>
+        <div class="feature-card text-center reveal"><div class="feature-icon" style="margin:0 auto 14px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="1.5"/><path d="M3 12h18M12 8v12M8.2 8c-1.5 0-2.9-1-2.9-2.5S6.7 3 8.2 3s3.8 3 3.8 5M15.8 8c1.5 0 2.9-1 2.9-2.5S17.3 3 15.8 3 12 6 12 8"/></svg></div><h3>1500 pts</h3><p>Rs 1,500 gift card</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark text-center reveal">
+    <div class="container">
+      <h2>Ready To Start Earning?</h2>
+      <p style="max-width:480px;margin:14px auto 26px;">Sign up in-café or place your first order online — points start counting immediately.</p>
+      <a href="order.html" class="btn btn-primary">Order &amp; Start Earning</a>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+<div id="float-placeholder"></div>
+<script src="js/menu-data.js"></script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

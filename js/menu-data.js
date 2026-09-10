@@ -1,0 +1,60 @@
+/* =========================================================
+   Shared product data — used by menu.html, order.html, home page
+   ========================================================= */
+const MENU_ITEMS = [
+  { id: 'esp01', name: 'Classic Espresso', cat: 'coffee', price: 350, cal: 5, tag: 'Bestseller',
+    desc: 'A concentrated shot pulled from our signature dark roast blend.',
+    img: 'https://picsum.photos/seed/espresso1/500/400' },
+  { id: 'esp02', name: 'Caramel Macchiato', cat: 'coffee', price: 620, cal: 210, tag: 'Popular',
+    desc: 'Steamed milk, vanilla syrup and espresso, finished with caramel drizzle.',
+    img: 'https://picsum.photos/seed/macchiato/500/400' },
+  { id: 'esp03', name: 'Flat White', cat: 'coffee', price: 550, cal: 170, tag: '',
+    desc: 'Velvety micro-foam poured over a double ristretto shot.',
+    img: 'https://picsum.photos/seed/flatwhite/500/400' },
+  { id: 'esp04', name: 'Iced Americano', cat: 'coffee', price: 480, cal: 15, tag: 'Cold',
+    desc: 'Bold espresso over ice, topped with chilled water for a crisp finish.',
+    img: 'https://picsum.photos/seed/icedamericano/500/400' },
+  { id: 'esp05', name: 'Mocha Freeze', cat: 'coffee', price: 690, cal: 320, tag: 'Cold',
+    desc: 'Blended espresso, chocolate and ice crowned with whipped cream.',
+    img: 'https://picsum.photos/seed/mochafreeze/500/400' },
+  { id: 'esp06', name: 'Pour-Over Single Origin', cat: 'coffee', price: 590, cal: 5, tag: 'New',
+    desc: 'Ethically sourced single-origin beans, hand-brewed to order.',
+    img: 'https://picsum.photos/seed/pourover/500/400' },
+
+  { id: 'tea01', name: 'Kashmiri Chai', cat: 'tea', price: 380, cal: 150, tag: 'Local Favourite',
+    desc: 'Pink tea simmered with cardamom, pistachio and a hint of rose.',
+    img: 'https://picsum.photos/seed/kashmirichai/500/400' },
+  { id: 'tea02', name: 'Peach Iced Tea', cat: 'tea', price: 420, cal: 120, tag: 'Cold',
+    desc: 'Black tea, fresh peach syrup, served chilled over ice.',
+    img: 'https://picsum.photos/seed/peachtea/500/400' },
+  { id: 'tea03', name: 'Matcha Latte', cat: 'tea', price: 590, cal: 190, tag: '',
+    desc: 'Ceremonial-grade matcha whisked with steamed oat milk.',
+    img: 'https://picsum.photos/seed/matchalatte/500/400' },
+
+  { id: 'pas01', name: 'Butter Croissant', cat: 'bakery', price: 320, cal: 280, tag: '',
+    desc: 'Flaky, laminated pastry baked fresh every morning.',
+    img: 'https://picsum.photos/seed/croissant/500/400' },
+  { id: 'pas02', name: 'Chocolate Chip Cookie', cat: 'bakery', price: 220, cal: 340, tag: 'Bestseller',
+    desc: 'Thick, chewy cookie loaded with Belgian chocolate chunks.',
+    img: 'https://picsum.photos/seed/cookie/500/400' },
+  { id: 'pas03', name: 'Blueberry Muffin', cat: 'bakery', price: 290, cal: 310, tag: '',
+    desc: 'Moist muffin studded with wild blueberries and a sugar crust.',
+    img: 'https://picsum.photos/seed/muffin/500/400' },
+  { id: 'pas04', name: 'New York Cheesecake', cat: 'bakery', price: 480, cal: 410, tag: 'New',
+    desc: 'Creamy baked cheesecake on a buttery biscuit base.',
+    img: 'https://picsum.photos/seed/cheesecake/500/400' },
+
+  { id: 'snk01', name: 'Chicken Panini', cat: 'food', price: 750, cal: 480, tag: 'Popular',
+    desc: 'Grilled chicken, mozzarella and pesto pressed between ciabatta.',
+    img: 'https://picsum.photos/seed/panini/500/400' },
+  { id: 'snk02', name: 'Avocado Toast', cat: 'food', price: 680, cal: 340, tag: 'New',
+    desc: 'Smashed avocado, chili flakes and feta on toasted sourdough.',
+    img: 'https://picsum.photos/seed/avocadotoast/500/400' },
+  { id: 'snk03', name: 'Garden Wrap', cat: 'food', price: 590, cal: 260, tag: '',
+    desc: 'Fresh greens, hummus and roasted vegetables in a spinach wrap.',
+    img: 'https://picsum.photos/seed/gardenwrap/500/400' },
+];
+
+const CATEGORY_LABELS = {
+  all: 'All Items', coffee: 'Coffee', tea: 'Tea & Matcha', bakery: 'Bakery', food: 'Food',
+};

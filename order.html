@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Online | The Only Caffeinated Solution</title>
+<meta name="description" content="Order coffee, tea, bakery and food online from The Only Caffeinated Solution, with live cart totals and fast delivery across Lahore.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%232b1810'/%3E%3Cpath d='M16 28h26v10a13 13 0 0 1-13 13 13 13 0 0 1-13-13V28z' fill='%23f0e2cc'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="order">
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="header-placeholder"></div>
+
+<main id="main">
+
+  <section class="page-hero" style="background-image:url('https://picsum.photos/seed/orderhero/1600/700');padding:170px 0 60px;">
+    <div class="container">
+      <span class="eyebrow">Order Online</span>
+      <h1>Build Your Order</h1>
+      <p>Add items below — your cart total updates live on the right.</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Order Online</p>
+    </div>
+  </section>
+
+  <section class="section--tight" id="orderBuilderSection">
+    <div class="container">
+      <div class="order-layout">
+        <div>
+          <div class="filter-bar" id="orderFilters">
+            <button type="button" class="filter-btn active" data-filter="all">All Items</button>
+            <button type="button" class="filter-btn" data-filter="coffee">Coffee</button>
+            <button type="button" class="filter-btn" data-filter="tea">Tea &amp; Matcha</button>
+            <button type="button" class="filter-btn" data-filter="bakery">Bakery</button>
+            <button type="button" class="filter-btn" data-filter="food">Food</button>
+          </div>
+          <div class="grid grid-2" id="orderGrid"></div>
+        </div>
+        <aside>
+          <div class="order-summary" id="orderSummary"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream" id="checkoutSection">
+    <div class="container">
+      <div class="form-card" style="max-width:800px;margin:0 auto;">
+
+        <div class="form-success" id="checkoutSuccess">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4.5 4.5L19 8"/></svg></div>
+          <h2>Order Placed Successfully!</h2>
+          <p style="margin-top:10px;">Your order number is <strong id="orderNumber"></strong>. We've sent a confirmation and our rider will be on the way shortly.</p>
+          <a href="index.html" class="btn btn-outline" style="margin-top:22px;">Back To Home</a>
+        </div>
+
+        <div id="checkoutFormBody">
+          <div class="section-head">
+            <span class="eyebrow">Checkout</span>
+            <h2>Delivery Details</h2>
+          </div>
+          <form id="checkoutForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="coName">Full Name <span class="req">*</span></label>
+                <input type="text" id="coName" name="coName" required>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="coPhone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="coPhone" name="coPhone" required placeholder="03XX XXXXXXX">
+                <span class="error-msg"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="coAddress">Delivery Address <span class="req">*</span></label>
+              <textarea id="coAddress" name="coAddress" required minlength="10" placeholder="House / street / area / city"></textarea>
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="coBranch">Nearest Branch <span class="req">*</span></label>
+              <select id="coBranch" name="coBranch" required>
+                <option value="">Select a branch</option>
+                <option>Gulberg III</option>
+                <option>DHA Phase 5</option>
+                <option>Johar Town</option>
+                <option>Bahria Town</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label>Payment Method <span class="req">*</span></label>
+              <div class="radio-pill-group">
+                <label class="radio-pill"><input type="radio" name="coPayment" value="cod" checked><span>Cash on Delivery</span></label>
+                <label class="radio-pill"><input type="radio" name="coPayment" value="card"><span>Debit / Credit Card</span></label>
+                <label class="radio-pill"><input type="radio" name="coPayment" value="jazzcash"><span>JazzCash / EasyPaisa</span></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="coNotes">Order Notes (optional)</label>
+              <textarea id="coNotes" name="coNotes" maxlength="200" data-counter="coNotesCount" placeholder="Extra hot, no sugar, leave at the gate..."></textarea>
+              <span class="char-count" id="coNotesCount">0 / 200</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="checkoutBtn" disabled>Place Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+<div id="float-placeholder"></div>
+<script src="js/menu-data.js"></script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

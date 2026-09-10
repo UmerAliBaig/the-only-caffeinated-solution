@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservations | The Only Caffeinated Solution</title>
+<meta name="description" content="Reserve a table at The Only Caffeinated Solution — pick your branch, date, time and party size online.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%232b1810'/%3E%3Cpath d='M16 28h26v10a13 13 0 0 1-13 13 13 13 0 0 1-13-13V28z' fill='%23f0e2cc'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reservation">
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="header-placeholder"></div>
+
+<main id="main">
+
+  <section class="page-hero" style="background-image:url('https://picsum.photos/seed/reservationhero/1600/700');">
+    <div class="container">
+      <span class="eyebrow">Reservations</span>
+      <h1>Save Your Seat</h1>
+      <p>Recommended for groups of 6 or more, and weekend evenings.</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Reservations</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div class="reveal">
+        <img src="https://picsum.photos/seed/reservationinterior/640/520" alt="Café seating area" style="border-radius:20px;box-shadow:var(--shadow-lg);">
+      </div>
+
+      <div class="form-card reveal">
+        <div class="form-success" id="reservationSuccess">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4.5 4.5L19 8"/></svg></div>
+          <h2>Table Reserved!</h2>
+          <p style="margin-top:10px;">Your reservation reference is <strong id="resRefNumber"></strong>. We'll text you a reminder an hour before.</p>
+        </div>
+
+        <div id="reservationFormBody">
+          <div class="section-head">
+            <span class="eyebrow">Book A Table</span>
+            <h2>Reservation Details</h2>
+          </div>
+          <form id="reservationForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="resName">Full Name <span class="req">*</span></label>
+                <input type="text" id="resName" name="resName" required>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="resPhone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="resPhone" name="resPhone" required placeholder="03XX XXXXXXX">
+                <span class="error-msg"></span>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="resDate">Date <span class="req">*</span></label>
+                <input type="date" id="resDate" name="resDate" required>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="resTime">Time <span class="req">*</span></label>
+                <input type="time" id="resTime" name="resTime" required>
+                <span class="error-msg"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="resBranch">Branch <span class="req">*</span></label>
+              <select id="resBranch" name="resBranch" required>
+                <option value="">Select a branch</option>
+                <option>Gulberg III</option>
+                <option>DHA Phase 5</option>
+                <option>Johar Town</option>
+                <option>Bahria Town</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label>Number Of Guests</label>
+              <div class="qty-control" id="guestCounter" style="width:fit-content;">
+                <button type="button" data-action="dec" aria-label="Decrease guests">&minus;</button>
+                <span class="qty-val">2</span>
+                <button type="button" data-action="inc" aria-label="Increase guests">&plus;</button>
+              </div>
+              <input type="hidden" id="resGuests" name="resGuests" value="2">
+            </div>
+            <div class="form-group">
+              <label for="resNotes">Special Requests</label>
+              <textarea id="resNotes" name="resNotes" maxlength="200" data-counter="resNotesCount" placeholder="Window seat, birthday cake, wheelchair access..."></textarea>
+              <span class="char-count" id="resNotesCount">0 / 200</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+<div id="float-placeholder"></div>
+<script src="js/menu-data.js"></script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

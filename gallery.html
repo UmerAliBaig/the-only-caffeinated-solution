@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | The Only Caffeinated Solution</title>
+<meta name="description" content="A look inside The Only Caffeinated Solution — our cafés, our coffee, our people. Click any photo to view it full-size.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%232b1810'/%3E%3Cpath d='M16 28h26v10a13 13 0 0 1-13 13 13 13 0 0 1-13-13V28z' fill='%23f0e2cc'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="header-placeholder"></div>
+
+<main id="main">
+
+  <section class="page-hero" style="background-image:url('https://picsum.photos/seed/galleryhero/1600/700');">
+    <div class="container">
+      <span class="eyebrow">Gallery</span>
+      <h1>A Look Inside TOCS</h1>
+      <p>Click any photo for a closer look — use the arrow keys or swipe to browse.</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g1/1200/900" data-caption="Latte art at our Gulberg flagship">
+          <img src="https://picsum.photos/seed/g1/500/500" alt="Latte art at our Gulberg flagship" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g2/1200/900" data-caption="Morning light in the DHA café">
+          <img src="https://picsum.photos/seed/g2/500/500" alt="Morning light in the DHA café" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g3/1200/900" data-caption="Fresh croissants, baked daily">
+          <img src="https://picsum.photos/seed/g3/500/500" alt="Fresh croissants baked daily" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g4/1200/900" data-caption="Our roastery at work">
+          <img src="https://picsum.photos/seed/g4/500/500" alt="Our roastery at work" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g5/1200/900" data-caption="Cold brew on tap">
+          <img src="https://picsum.photos/seed/g5/500/500" alt="Cold brew on tap" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g6/1200/900" data-caption="Seating nook at Johar Town">
+          <img src="https://picsum.photos/seed/g6/500/500" alt="Seating nook at Johar Town branch" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g7/1200/900" data-caption="Weekend brunch spread">
+          <img src="https://picsum.photos/seed/g7/500/500" alt="Weekend brunch spread" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g8/1200/900" data-caption="Our barista team at work">
+          <img src="https://picsum.photos/seed/g8/500/500" alt="Our barista team at work" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g9/1200/900" data-caption="Freshly roasted beans cooling">
+          <img src="https://picsum.photos/seed/g9/500/500" alt="Freshly roasted beans cooling" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g10/1200/900" data-caption="Community open-mic night">
+          <img src="https://picsum.photos/seed/g10/500/500" alt="Community open-mic night" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g11/1200/900" data-caption="Our mobile coffee cart on location">
+          <img src="https://picsum.photos/seed/g11/500/500" alt="Mobile coffee cart on location" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" data-full="https://picsum.photos/seed/g12/1200/900" data-caption="Behind the espresso machine">
+          <img src="https://picsum.photos/seed/g12/500/500" alt="Behind the espresso machine" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <button type="button" class="lightbox-prev" aria-label="Previous photo">&#8592;</button>
+    <img src="" alt="Gallery photo enlarged">
+    <button type="button" class="lightbox-next" aria-label="Next photo">&#8594;</button>
+    <p class="lightbox-caption"></p>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<div id="float-placeholder"></div>
+<script src="js/menu-data.js"></script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
