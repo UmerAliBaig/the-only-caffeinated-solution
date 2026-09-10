@@ -19,7 +19,6 @@ const NAV_LINKS = [
   { href: 'order.html', label: 'Order Online', key: 'order' },
   { href: 'reservation.html', label: 'Reservations', key: 'reservation' },
   { href: 'locations.html', label: 'Locations', key: 'locations' },
-  { href: 'gallery.html', label: 'Gallery', key: 'gallery' },
 ];
 
 const NAV_MORE = [
@@ -108,7 +107,6 @@ function buildFooter() {
         <ul>
           <li><a href="about.html">About Us</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
         </ul>
