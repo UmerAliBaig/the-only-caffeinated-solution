@@ -21,9 +21,6 @@ const MENU_ITEMS = [
     desc: 'Ethically sourced single-origin beans, hand-brewed to order.',
     img: 'https://picsum.photos/seed/pourover/500/400' },
 
-  { id: 'tea01', name: 'Kashmiri Chai', cat: 'tea', price: 380, cal: 150, tag: 'Local Favourite',
-    desc: 'Pink tea simmered with cardamom, pistachio and a hint of rose.',
-    img: 'https://picsum.photos/seed/kashmirichai/500/400' },
   { id: 'tea02', name: 'Peach Iced Tea', cat: 'tea', price: 420, cal: 120, tag: 'Cold',
     desc: 'Black tea, fresh peach syrup, served chilled over ice.',
     img: 'https://picsum.photos/seed/peachtea/500/400' },

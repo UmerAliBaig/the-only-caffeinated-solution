@@ -96,7 +96,7 @@ function buildFooter() {
             <span class="brand-tag">Brewed For Believers</span>
           </span>
         </a>
-        <p>Specialty coffee, honest food and a warm seat for every story — served fresh across Lahore since 2016.</p>
+        <p>Specialty coffee, honest food and a warm seat for every story — served fresh across Karachi since 2016.</p>
         <div class="footer-social">
           <a href="https://facebook.com/onlycaffeinatedsolution" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13.6 21v-8.1h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.5 1.6-1.5h1.7V3.3C16.6 3.2 15.7 3 14.6 3c-2.5 0-4.2 1.5-4.2 4.3v2.4H7.7v3.2h2.7V21z"/></svg></a>
           <a href="https://instagram.com/onlycaffeinatedsolution" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg></a>
@@ -129,7 +129,7 @@ function buildFooter() {
       <div>
         <h4>Contact</h4>
         <ul>
-          <li>96-B Main Boulevard, Gulberg III, Lahore</li>
+          <li>96-B Khayaban-e-Iqbal, Clifton, Karachi</li>
           <li><a href="tel:+923001234567">+92 300 1234567</a></li>
           <li><a href="mailto:hello@onlycaffeinated.com">hello@onlycaffeinated.com</a></li>
           <li>Open Daily · 8:00 AM – 12:00 AM</li>
