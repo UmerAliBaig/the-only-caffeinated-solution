@@ -372,7 +372,12 @@ svg { display: block; }
 /* ---------- Order summary / cart ---------- */
 #checkoutSection { scroll-margin-top: var(--header-h); }
 .order-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: start; }
-.order-summary { background: var(--espresso-900); color: var(--cream-100); border-radius: var(--radius-md); padding: 30px; position: sticky; top: calc(var(--header-h) + 20px); }
+.order-summary {
+  background: var(--espresso-900); color: var(--cream-100); border-radius: var(--radius-md);
+  padding: 30px; position: sticky; top: calc(var(--header-h) + 20px);
+  min-height: 320px; display: flex; flex-direction: column; justify-content: center;
+}
+.order-summary:has(.summary-line) { justify-content: flex-start; }
 .order-summary h3 { color: var(--cream-100); margin-bottom: 18px; }
 .summary-line { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--line-dark); font-size: 0.9rem; }
 .summary-line.total { font-weight: 700; font-size: 1.1rem; border-bottom: none; padding-top: 16px; color: var(--caramel-400); }
