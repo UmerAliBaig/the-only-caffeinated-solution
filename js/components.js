@@ -16,7 +16,6 @@ const NAV_LINKS = [
   { href: 'index.html', label: 'Home', key: 'home' },
   { href: 'about.html', label: 'About', key: 'about' },
   { href: 'menu.html', label: 'Menu', key: 'menu' },
-  { href: 'order.html', label: 'Order Online', key: 'order' },
   { href: 'reservation.html', label: 'Reservations', key: 'reservation' },
   { href: 'locations.html', label: 'Locations', key: 'locations' },
 ];
