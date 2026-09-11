@@ -210,8 +210,9 @@ svg { display: block; }
 @keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(10px); } }
 
 .page-hero {
-  padding: 190px 0 90px; text-align: center; color: var(--cream-100);
-  background: linear-gradient(180deg, rgba(10,6,3,0.82), rgba(8,5,2,0.93)), var(--espresso-900);
+  min-height: 64vh; display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 40px 0 64px; text-align: center; color: var(--cream-100);
+  background: linear-gradient(180deg, rgba(8,5,2,0.4) 0%, rgba(6,4,2,0.82) 65%, rgba(5,3,2,0.95) 100%), var(--espresso-900);
   background-size: cover; background-position: center;
 }
 .page-hero h1, .page-hero p, .page-hero .eyebrow { text-shadow: 0 2px 16px rgba(0,0,0,0.55); }
@@ -575,5 +576,5 @@ svg { display: block; }
   .lightbox-next { right: 8px; }
   .lightbox-close { top: 8px; right: 8px; }
   .order-summary { position: static; }
-  .page-hero { padding: 150px 0 60px; }
+  .page-hero { min-height: 52vh; padding: 30px 0 48px; }
 }
