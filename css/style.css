@@ -193,11 +193,11 @@ svg { display: block; }
   color: var(--cream-100); overflow: hidden;
 }
 .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
-.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,10,5,0.5) 0%, rgba(16,9,4,0.78) 65%, rgba(14,8,4,0.92) 100%); }
+.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,6,3,0.72) 0%, rgba(9,5,3,0.85) 65%, rgba(8,5,2,0.94) 100%); }
 .hero-content { position: relative; z-index: 2; max-width: 640px; }
-.hero-content .eyebrow { color: var(--caramel-300); }
-.hero-content h1 { color: var(--white); margin-bottom: 20px; }
-.hero-content p { color: var(--cream-200); font-size: 1.1rem; margin-bottom: 34px; max-width: 520px; }
+.hero-content .eyebrow { color: var(--caramel-300); text-shadow: 0 2px 14px rgba(0,0,0,0.5); }
+.hero-content h1 { color: var(--white); margin-bottom: 20px; text-shadow: 0 2px 16px rgba(0,0,0,0.55); }
+.hero-content p { color: var(--cream-200); font-size: 1.1rem; margin-bottom: 34px; max-width: 520px; text-shadow: 0 2px 14px rgba(0,0,0,0.5); }
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
 .hero-stats { display: flex; gap: 40px; margin-top: 58px; flex-wrap: wrap; }
 .hero-stats .stat-num { font-family: var(--font-heading); font-size: 2rem; color: var(--caramel-400); font-weight: 600; }
@@ -211,9 +211,10 @@ svg { display: block; }
 
 .page-hero {
   padding: 190px 0 90px; text-align: center; color: var(--cream-100);
-  background: linear-gradient(180deg, rgba(18,10,5,0.62), rgba(14,8,4,0.9)), var(--espresso-900);
+  background: linear-gradient(180deg, rgba(10,6,3,0.82), rgba(8,5,2,0.93)), var(--espresso-900);
   background-size: cover; background-position: center;
 }
+.page-hero h1, .page-hero p, .page-hero .eyebrow { text-shadow: 0 2px 16px rgba(0,0,0,0.55); }
 .page-hero h1 { color: var(--white); }
 .page-hero p { color: var(--cream-200); max-width: 560px; margin: 14px auto 0; }
 .breadcrumb { margin-top: 22px; font-size: 0.78rem; letter-spacing: 0.04em; color: var(--caramel-300); text-transform: uppercase; }
