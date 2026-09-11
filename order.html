@@ -21,28 +21,27 @@
     <div class="container">
       <span class="eyebrow">Order Online</span>
       <h1>Build Your Order</h1>
-      <p>Add items below — your cart total updates live on the right.</p>
+      <p>Add items below — your cart total updates live as you go.</p>
       <p class="breadcrumb"><a href="index.html">Home</a> / Order Online</p>
     </div>
   </section>
 
   <section class="section--tight" id="orderBuilderSection">
     <div class="container">
-      <div class="order-layout">
-        <div>
-          <div class="filter-bar" id="orderFilters">
-            <button type="button" class="filter-btn active" data-filter="all">All Items</button>
-            <button type="button" class="filter-btn" data-filter="coffee">Coffee</button>
-            <button type="button" class="filter-btn" data-filter="tea">Tea &amp; Matcha</button>
-            <button type="button" class="filter-btn" data-filter="bakery">Bakery</button>
-            <button type="button" class="filter-btn" data-filter="food">Food</button>
-          </div>
-          <div class="grid grid-2" id="orderGrid"></div>
-        </div>
-        <aside>
-          <div class="order-summary" id="orderSummary"></div>
-        </aside>
+      <div class="filter-bar" id="orderFilters">
+        <button type="button" class="filter-btn active" data-filter="all">All Items</button>
+        <button type="button" class="filter-btn" data-filter="coffee">Coffee</button>
+        <button type="button" class="filter-btn" data-filter="tea">Tea &amp; Matcha</button>
+        <button type="button" class="filter-btn" data-filter="bakery">Bakery</button>
+        <button type="button" class="filter-btn" data-filter="food">Food</button>
       </div>
+      <div class="grid grid-3" id="orderGrid"></div>
+    </div>
+  </section>
+
+  <section class="section--tight" id="orderSummarySection">
+    <div class="container">
+      <div class="order-summary" id="orderSummary" style="max-width:560px;margin:0 auto;"></div>
     </div>
   </section>
 

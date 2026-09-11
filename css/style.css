@@ -371,10 +371,9 @@ svg { display: block; }
 
 /* ---------- Order summary / cart ---------- */
 #checkoutSection { scroll-margin-top: var(--header-h); }
-.order-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: start; }
 .order-summary {
   background: var(--espresso-900); color: var(--cream-100); border-radius: var(--radius-md);
-  padding: 30px; position: sticky; top: calc(var(--header-h) + 20px);
+  padding: 30px;
 }
 .order-summary:not(:has(.summary-line)) {
   min-height: 320px; display: flex; flex-direction: column; justify-content: center;
@@ -563,7 +562,6 @@ svg { display: block; }
   .nav-item.has-dropdown.open .dropdown-menu { display: block; }
   .hamburger { display: flex; }
   .two-col { grid-template-columns: 1fr; gap: 32px; }
-  .order-layout { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .header-actions .btn { display: none; }
@@ -581,6 +579,5 @@ svg { display: block; }
   .lightbox-prev { left: 8px; }
   .lightbox-next { right: 8px; }
   .lightbox-close { top: 8px; right: 8px; }
-  .order-summary { position: static; }
   .page-hero { min-height: 52vh; padding: 30px 0 48px; }
 }
